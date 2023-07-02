@@ -34,10 +34,10 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 const metadata = {
   title: (title: string) => <title>{title}</title>,
   description: (description: string) => (
-     <meta name="description" content={description} />
+    <meta name="description" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'Discover, buy and sell NFTs'}</>
+    <>{tagline || 'Discover, buy and sell Rocks'}</>
   ),
   image: (image?: string) => {
     if (image) {
@@ -51,7 +51,6 @@ const metadata = {
     return null
   },
 }
-
 const Home: NextPage<Props> = ({ fallback }) => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 600px)')
   const router = useRouter()
