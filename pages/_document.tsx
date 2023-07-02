@@ -41,7 +41,7 @@ const MyDocument = function () {
       <meta name="twitter:site" content="@vercel" />
       <meta name="twitter:title" content="RockFi Marketplace" />
       <meta name="twitter:description" content="Zero Fees Marketplace and Visualiation Tool for the RockFi Market" />
-      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1070620418622373908/1125146382999765113/rockfi.png" />
+      <meta name="twitter:image" content="https://rockfi.io/IMG_2921.PNG" />
       {/* should be between 30-60 characters, with a maximum of 70 */}
       {/* OG - https://ogp.me/ */}
       {/* https://www.opengraph.xyz/ */}
