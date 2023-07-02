@@ -48,7 +48,7 @@ const metadata = {
           <meta name="twitter:creator" content="@RockFi">
           <meta name="twitter:title" content="RockFi Marketplace">
           <meta name="twitter:description" content="Zero Fees Marketplace and Visualiation Tool for the RockFi Market.">
-          <meta name="twitter:image" content="https://files.fm/u/a67cppfts">
+          <meta name="twitter:image" content="https://files.fm/u/a67cppfts" alt="ohphoto">
         </>
       )
     }
