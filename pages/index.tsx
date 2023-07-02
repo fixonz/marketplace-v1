@@ -51,6 +51,7 @@ const metadata = {
     return null
   },
 }
+
 const Home: NextPage<Props> = ({ fallback }) => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 600px)')
   const router = useRouter()
@@ -88,7 +89,7 @@ const Home: NextPage<Props> = ({ fallback }) => {
       <div className="col-span-full px-6 md:px-16">
         <div className="mb-9 flex w-full items-center justify-between">
           <div className="reservoir-h4 dark:text-white">
-            Trending Rock Collections
+            Trending Rocks
           </div>
           {!isSmallDevice && <SortTrendingCollections />}
         </div>
