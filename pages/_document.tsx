@@ -37,16 +37,12 @@ const MyDocument = function () {
       <meta name="keywords" content="NFT, API, Protocol" />
       {/* Twitter */}
       {/* The optimal size is 1200 x 630 (1.91:1 ratio). */}
-      <meta name="twitter:image" content={OG_IMAGE} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site:domain" content={META_URL} />
-      <meta name="twitter:url" content={META_URL} />
+      <meta name="twitter:site" content="@vercel" />
+      <meta name="twitter:title" content="RockFi Marketplace" />
+      <meta name="twitter:description" content="Zero Fees Marketplace and Visualiation Tool for the RockFi Market" />
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1070620418622373908/1125146382999765113/rockfi.png" />
       {/* should be between 30-60 characters, with a maximum of 70 */}
-      <meta name="twitter:title" content={META_TITLE} />
-      {/* should be between 55 and 200 characters long */}
-      <meta name="twitter:description" content={META_DESCRIPTION} />
-      <meta name="twitter:site" content={META_TWITTER_USERNAME} />
-
       {/* OG - https://ogp.me/ */}
       {/* https://www.opengraph.xyz/ */}
       {/* should be between 30-60 characters, with a maximum of 90 */}
