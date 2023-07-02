@@ -34,33 +34,23 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>
 const metadata = {
   title: (title: string) => <title>{title}</title>,
   description: (description: string) => (
-    <meta name="description" content={description} />
+     <meta name="description" content={description} />
   ),
   tagline: (tagline: string | undefined) => (
-    <>{tagline || 'Discover, buy and sell Rocks'}</>
+    <>{tagline || 'Discover, buy and sell NFTs'}</>
   ),
- image?: string;
-}
-
-const TwitterCard: React.FC<TwitterCardProps> = ({ image }) => {
-  if (image) {
-    return (
-      <Head>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@nytimes" />
-        <meta name="twitter:creator" content="@RockFi" />
-        <meta name="twitter:title" content="RockFi Marketplace" />
-        <meta name="twitter:description" content="Zero Fees Marketplace and Visualization Tool for the RockFi Market." />
-        <meta name="twitter:image" content="https://files.fm/u/a67cppfts" alt="ohphoto" />
-      </Head>
-    );
-  }
-
-  return null;
-};
-
-export default TwitterCard;
+  image: (image?: string) => {
+    if (image) {
+      return (
+        <>
+          <meta name="twitter:image" content={image} />
+          <meta name="og:image" content={image} />
+        </>
+      )
+    }
+    return null
   },
+}
 
 const Home: NextPage<Props> = ({ fallback }) => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 600px)')
