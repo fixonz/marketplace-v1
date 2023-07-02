@@ -39,8 +39,7 @@ const metadata = {
   tagline: (tagline: string | undefined) => (
     <>{tagline || 'Discover, buy and sell Rocks'}</>
   ),
-interface TwitterCardProps {
-  image?: string;
+ image?: string;
 }
 
 const TwitterCard: React.FC<TwitterCardProps> = ({ image }) => {
@@ -62,7 +61,6 @@ const TwitterCard: React.FC<TwitterCardProps> = ({ image }) => {
 
 export default TwitterCard;
   },
-}
 
 const Home: NextPage<Props> = ({ fallback }) => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 600px)')
