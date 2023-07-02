@@ -39,20 +39,28 @@ const metadata = {
   tagline: (tagline: string | undefined) => (
     <>{tagline || 'Discover, buy and sell Rocks'}</>
   ),
-  image: (image?: string) => {
-    if (image) {
-      return (
-        <>
-          <meta name="twitter:card" content="summary_large_image">
-          <meta name="twitter:site" content="@nytimes">
-          <meta name="twitter:creator" content="@RockFi">
-          <meta name="twitter:title" content="RockFi Marketplace">
-          <meta name="twitter:description" content="Zero Fees Marketplace and Visualiation Tool for the RockFi Market.">
-          <meta name="twitter:image" content="https://files.fm/u/a67cppfts" alt="ohphoto">
-        </>
-      )
-    }
-    return null
+interface TwitterCardProps {
+  image?: string;
+}
+
+const TwitterCard: React.FC<TwitterCardProps> = ({ image }) => {
+  if (image) {
+    return (
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@nytimes" />
+        <meta name="twitter:creator" content="@RockFi" />
+        <meta name="twitter:title" content="RockFi Marketplace" />
+        <meta name="twitter:description" content="Zero Fees Marketplace and Visualization Tool for the RockFi Market." />
+        <meta name="twitter:image" content="https://files.fm/u/a67cppfts" alt="ohphoto" />
+      </Head>
+    );
+  }
+
+  return null;
+};
+
+export default TwitterCard;
   },
 }
 
