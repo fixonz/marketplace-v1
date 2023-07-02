@@ -43,8 +43,12 @@ const metadata = {
     if (image) {
       return (
         <>
-          <meta name="twitter:image" content={image} />
-          <meta name="og:image" content={image} />
+          <meta name="twitter:card" content="summary_large_image">
+          <meta name="twitter:site" content="@nytimes">
+          <meta name="twitter:creator" content="@RockFi">
+          <meta name="twitter:title" content="RockFi Marketplace">
+          <meta name="twitter:description" content="Zero Fees Marketplace and Visualiation Tool for the RockFi Market.">
+          <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1070620418622373908/1125146382999765113/rockfi.png">
         </>
       )
     }
